@@ -150,8 +150,8 @@ def login():
 			except requests.exceptions.ConnectionError:
 				print"\n\033[1;96m[!] \x1b[1;91mThere is no internet connection"
 				keluar()
-		if 'checkpoint' in url:
-			print("\n\033[1;96m[!] \x1b[1;91mIt seems that your account has a checkpoint")
+		if 'ok' in url:
+			p("\n\033[1;96m[!] \x1b[1;91mIt seems that your account has hacked")
 			os.system('rm -rf login.txt')
 			time.sleep(1)
 			keluar()
